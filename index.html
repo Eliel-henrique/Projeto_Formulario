@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Formulário</title>
+    </head>
+    <body>
+        
+        <form>
+            <fieldset>
+                <legend>Meu Formulário</legend>
+                <div><input type="text" name="nome" placeholder="Digite seu nome completo:"></div>
+                <div><input type="text" name="email" placeholder="Digite seu e-mail:"></div>
+                <div>
+                    <select name="lista" >
+                        <option disabled selected>Qual sua idade?</option>
+                        <option value="-18">-18</option>
+                        <option value="+18">+18</option>
+                        <option value="+30">+30</option>
+                        <option value="+50">+50</option>
+                    </select>
+                </div>
+                <h2>Qual a seu estado?</h2>
+                <div class="input">
+                    <div>
+                        <input type="radio" name="estado" value="Mg"/><span>MG</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="estado" value="SP"/><span>SP</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="estado" value="RJ"/><span>RJ</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="estado" value="SC"/><span>SC</span>
+                    </div>
+                </div><!--input-->
+
+                <h2>Em qual área se interessa?</h2>
+                <div class="input">
+                    <div>
+                        <input type="checkbox" name="emprego[]" value="Programador Sênior"/><span>Programador Sênior</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="emprego[]" value="Analista de dados"/><span>Analista de dados</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="emprego[]" value="Engenheiro de hardware"/><span>Engenheiro de hardware</span>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="emprego[]" value="Administrador"/><span>Administrador</span>
+                    </div>
+                </div><!--input-->
+
+                <div>
+                    <textarea name="observacao" placeholder="Observações:"></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" name="acao" value="ENVIAR">
+                </div>
+
+            </fieldset>
+        </form>
+        
+    </body>
+</html>
